@@ -109,6 +109,6 @@ $$ as csv_interactive_exec_scriptbody \gset
 -- ^^^ This looks f'd up but we're adding this layer of indirection to protect
 -- ... our psql-stuff.
 -- Set output, Write to output, Reset output so no subsequent weirdness, then source the psql-script
-\set csv_interactive_exec '\\o /tmp/ciscript \\\\ \\qecho :csv_interactive_exec_scriptbody \\\\ \\o /dev/stdout \\\\ \\i /tmp/stuff'
+\set csv_interactive_exec '\\o /tmp/ciscript \\\\ \\qecho :csv_interactive_exec_scriptbody \\\\ \\o /dev/stdout \\\\ \\i /tmp/ciscript'
 -- ... or \g /tmp/ciscript after the sql cmd, but then that needlessly writes even if you dont use this script
 
