@@ -1,0 +1,26 @@
+- foreign key constraints handling would be nice (update, dont just truncate / nuke & pave)
+    - google: "update values with psql from csv for a table that has constraints"
+- some kind of feedback if you have no tables (common in connecting to master schema @postgres first)
+- libreoffice auto-import (translate the CSV configuration to macros or something for libreoffice)
+    ... the dialogue is really annoying
+    - https://forum.openoffice.org/en/forum/viewtopic.php?f=20&t=87890
+    - https://www.geeksforgeeks.org/postgresql-function-parameters/
+    - https://unix.stackexchange.com/questions/517984/open-output-of-a-command-using-libreoffice
+    - https://askubuntu.com/questions/659741/how-to-open-a-file-with-libreoffice-writer-from-terminal
+    - https://opensource.com/article/21/3/libreoffice-command-line
+    - https://ask.libreoffice.org/t/how-to-convert-specific-sheet-to-csv-via-command-line/11842/2
+    - https://ask.libreoffice.org/t/disable-prompt-when-opening-a-csv-file/7164/14
+- ALL support for multiple files
+    > piece: https://stackoverflow.com/questions/14730228/postgresql-query-to-list-all-table-names
+- help output for setting PSQL_EDITOR as vim -p, or whatever emacs' equivalent is
+- improve locks scoping
+    > https://www.postgresql.org/docs/current/explicit-locking.html
+    > https://www.postgresql.org/docs/current/sql-set-transaction.html
+    > https://www.postgresql.org/docs/8.3/tutorial-transactions.html
+- auto-rollback
+    > leaves you in * or ! state currently, which is annoying to have to explicitly "END;"
+    > https://stackoverflow.com/questions/63489949/how-to-roll-back-a-transaction-on-error-in-postgresql
+
+- create some kind of hidden log for this psql-macro, or a way to query the log for these transactions (can you label transaction-types in sql?)
+
+- replace weird shell stuff with backquote expansion (+\if stanzas)

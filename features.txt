@@ -1,0 +1,4 @@
+- concurrency control (-ish, exclusive lock in trickiest/smallest part)
+- failsafe (just rolls back the whole transaction) 
+- libreoffice support
+- works for remote servers which you don't have file-write access to (e.g. aws::rds)
