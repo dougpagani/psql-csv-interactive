@@ -8,8 +8,8 @@ thisdir=$(dirname "$0")
 
 install=(
 ln -s 
-    .psqlrc-csv-interactive
     "$thisdir"/psql-csv-interactive.sql
+    ~/.psqlrc-csv-interactive
 )
 
 "${install[@]}"
