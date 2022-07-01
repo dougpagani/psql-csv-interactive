@@ -12,5 +12,5 @@ ln -s
     ~/.psql-csv-interactive
 )
 
-"${install[@]}"
+echo "${install[@]}"
 
