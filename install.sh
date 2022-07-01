@@ -4,7 +4,7 @@ cat >>~/.psqlrc <<'PSQLRC'
 \ir '.psql-csv-interactive'
 PSQLRC
 
-thisdir=$(dirname "$0")
+thisdir=$(dirname $(realpath "$0"))
 
 install=(
 ln -s 
